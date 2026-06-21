@@ -1,0 +1,80 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "author": "alice",
+      "content": "meeting at 10?",
+      "edited": false
+    },
+    {
+      "id": 2,
+      "author": "bob",
+      "content": "sure",
+      "edited": false
+    },
+    {
+      "id": 3,
+      "author": "alice",
+      "content": "Y3liZXJjaGFuew==",
+      "edited": true,
+      "edit_history": [
+        "hello",
+        "cyberchan{"
+      ]
+    },
+    {
+      "id": 4,
+      "author": "bob",
+      "content": "nothing important",
+      "edited": true,
+      "edit_history": [
+        "hidden_"
+      ]
+    },
+    {
+      "id": 5,
+      "author": "alice",
+      "content": "ok",
+      "edited": false
+    },
+    {
+      "id": 6,
+      "author": "bob",
+      "content": "changed message",
+      "edited": true,
+      "edit_history": [
+        "bWVzc2FnZXNf"
+      ]
+    },
+    {
+      "id": 7,
+      "author": "alice",
+      "content": "bye",
+      "edited": false
+    },
+    {
+      "id": 8,
+      "author": "bob",
+      "content": "edited",
+      "edited": true,
+      "edit_history": [
+        "bGVhdmVf"
+      ]
+    },
+    {
+      "id": 9,
+      "author": "alice",
+      "content": "see ya",
+      "edited": false
+    },
+    {
+      "id": 10,
+      "author": "bob",
+      "content": "done",
+      "edited": true,
+      "edit_history": [
+        "dHJhY2VzfQ=="
+      ]
+    }
+  ]
+}
