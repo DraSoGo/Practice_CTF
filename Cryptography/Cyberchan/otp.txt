@@ -1,0 +1,14 @@
+=== INTERCEPTED TRANSMISSIONS ===
+
+Both messages were encrypted with the same One-Time Pad key.
+
+Message 1 (hex):
+5a75ee1800245c4db66b7d1c1a043c0bb12fd5fa730ee9ddd12b5d985043bb4c
+
+Message 2 (hex):
+6d64e50e522e470cb2657c5b4f162d0bb90288ef6f71b5cbfd3c0fcb5103e25f
+
+Known plaintext of Message 2 (recovered from traffic analysis):
+"This is just a normal message, n"
+
+Message length: 32 bytes

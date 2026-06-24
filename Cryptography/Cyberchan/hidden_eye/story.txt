@@ -1,0 +1,17 @@
+Once upon ​ a ​ time in the kingdom ​ of ​ CyberChan, there lived ​ a ​ wise ​ wizard
+who ​ protected the realm ​ with ancient ​ cryptographic ​ spells. The wizard had hidden
+powerful ​ secrets throughout the ​ land, waiting ​ for brave adventurers ​ to discover ​ them.
+
+One day, a young ​ hacker ​ stumbled ​ upon an old ​ manuscript. The pages looked ​ blank
+at ​ first glance, but there was ​ something ​ hidden between ​ the ​ words — invisible
+characters ​ that only the most observant ​ could ​ detect.
+
+The wizard had written: "Not all that is ​ hidden is ​ invisible. Sometimes ​ the
+most powerful ​ secrets ​ hide ​ in plain sight, woven ​ between ​ the ​ characters ​ of
+ordinary text. Look ​ closer. Use ​ your tools ​ wisely."
+
+The young ​ hacker ​ ran the file ​ through ​ a hex ​ editor ​ and ​ gasped. Between certain
+words ​ lay invisible zero-width spaces (U+200B). In binary: space=0, ZWSP=1.
+Each group ​ of ​ 8 bits encoded one ​ character ​ of the ​ hidden ​ message.
+
+And so the first ​ secret ​ was ​ revealed...
