@@ -1,0 +1,23 @@
+FILE="1000.tar"
+
+while [ -f "$FILE" ]; do
+    echo "Extract : $FILE"
+    
+    tar -xf "$FILE" && rm "$FILE"
+    
+    NEXT_FILE=$(find . -name "*.tar" | head -n 1)
+    
+    if [ -z "$NEXT_FILE" ]; then
+        echo "Success"
+        break
+    fi
+    
+    if [[ "$NEXT_FILE" == ./*/* ]]; then
+        mv "$NEXT_FILE" .
+        find . -type d -empty -delete
+    fi
+    
+    FILE=$(basename "$NEXT_FILE")
+done
+
+picoCTF{l0t5_0f_TAR5}
