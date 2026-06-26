@@ -1,0 +1,37 @@
+; DNS Zone File for cyberchan.local
+; Generated: 2025-01-01 00:00:00 UTC
+
+$ORIGIN cyberchan.local.
+$TTL 3600
+
+@   IN  SOA   ns1.cyberchan.local. admin.cyberchan.local. (
+                  2025010101  ; serial
+                  3600        ; refresh
+                  900         ; retry
+                  604800      ; expire
+                  300 )       ; minimum TTL
+
+; Name Servers
+@           IN  NS    ns1.cyberchan.local.
+@           IN  NS    ns2.cyberchan.local.
+
+; A Records
+@           IN  A     192.168.1.10
+www         IN  A     192.168.1.10
+api         IN  A     192.168.1.20
+mail        IN  A     192.168.1.30
+ns1         IN  A     192.168.1.1
+ns2         IN  A     192.168.1.2
+
+; MX Records
+@           IN  MX    10 mail.cyberchan.local.
+
+; TXT Records
+@           IN  TXT   "v=spf1 ip4:192.168.1.30 ~all"
+_dmarc      IN  TXT   "v=DMARC1; p=none; rua=mailto:admin@cyberchan.local"
+_verify     IN  TXT   "Y3liZXJjaGFue2Ruc190eHRfcjNjMHJkX2wzNGtzfQ=="
+api         IN  TXT   "internal-service-v2.3.1"
+
+; CNAME Records
+ftp         IN  CNAME www.cyberchan.local.
+portal      IN  CNAME www.cyberchan.local.
